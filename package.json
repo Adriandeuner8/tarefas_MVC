@@ -8,7 +8,7 @@
     "md5": "^2.3.0",
     "mysql2": "^3.10.0"
   },
-  "name": "api-tarefas",
+  "name": "tarefas_mvc",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
