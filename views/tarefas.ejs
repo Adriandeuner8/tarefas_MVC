@@ -1,0 +1,17 @@
+<h3>Lista de Tarefas</h3>
+<ul class="list-group">
+  <% tarefas.forEach(tarefa => { %>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      <%= tarefa.title %>
+      <a href="/tarefa/delete/<%= tarefa.id_tarefa %>" class="btn btn-danger btn-sm">Delete</a>
+    </li>
+  <% }); %>
+</ul>
+
+<form action="/tarefas" method="POST" class="mt-3">
+  <div class="mb-3">
+    <input type="text" name="title" class="form-control" placeholder="Nova Tarefa">
+  </div>
+  <button type="submit" class="btn btn-primary">Adicionar</button>
+</form>
+
